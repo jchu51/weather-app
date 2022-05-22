@@ -2,9 +2,11 @@
 
 ## Getting Started
 
-### Install dependencies
+### Install dependencies and add enviorment variable
 
 `yarn install`
+
+To call openweather endpoints, we need to add `.env` file in the root folder, the environment variable is `REACT_APP_WEATHER_API_KEY=${openweatherApiKey}`
 
 ### Running the app
 
@@ -56,18 +58,18 @@ Overall the project is fun to build it, for this project I have decided to use c
 
 The reason to use:
 
-- create react app: Easy to setup the enviroment.
+- create react app: Easy to setup the environment.
 - typescript: secure type.
 - material ui: UI components
 - react testing library + jest: unit testing
-  
+
 At the moment I only used `useState` to store the value, since we dont have much data need to save and render it in other pages. In future, if we have more values, probably can change to `context` or `redux` to manage the state. Also, I have create a `alert` context, if the api call fail to return result. it will show up the error message.
 
 if is production env, I will change
 
 - create react app to webpack build
 - typescript
-- styledCompoennt 
+- styledCompoennt
 - react test library + jest
 - redux
 - storybook
