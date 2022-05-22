@@ -11,7 +11,7 @@ const onRequest = (config: AxiosRequestConfig): AxiosRequestConfig => {
 };
 
 const onRequestError = (error: AxiosError): Promise<AxiosError> => {
-  console.error(`[request error] [${JSON.stringify(error)}]`);
+  // console.error(`[request error] [${JSON.stringify(error)}]`);
   return Promise.reject(error);
 };
 
